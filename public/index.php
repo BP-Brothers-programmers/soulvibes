@@ -10,6 +10,17 @@
 <body>
     
     <?php include "../src/parts/header/module.php"; ?>
+
+    <main class="main">
+        <?php $banner = ['title' => 'High Quality Internet Music Stations', 'img' => 'images/layer1.png'] ?>
+        <?php include "../src/modules/banner/module.php"; ?>
+        <div class="container">   
+            <article>
+                <?php $containerTitle = ['title' => 'Genres Stations'] ?> 
+                <?php include "../src/modules/container-title/module.php"; ?>
+            </article>
+        </div>
+    </main>
     
     <script src="js/main.js"></script>
 </body>
