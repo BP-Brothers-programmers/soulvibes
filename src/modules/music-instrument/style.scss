@@ -1,0 +1,13 @@
+.instrument {
+    position: relative;
+    text-align: center;
+    padding: 40px 5px 55px;
+    border: 1px solid lightgray;
+
+    &__name {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 25px;
+    }
+}

@@ -18,6 +18,26 @@
             <article>
                 <?php $containerTitle = ['title' => 'Genres Stations'] ?> 
                 <?php include "../src/modules/container-title/module.php"; ?>
+
+                <div class="main__instruments">
+                    <?php $instruments = ['img' => 'images/trending-top.png', 'name' => 'Trending Top'] ?>
+                    <?php include "../src/modules/music-instrument/module.php"; ?>
+                    <?php $instruments = ['img' => 'images/rock.png', 'name' => 'Rock'] ?>
+                    <?php include "../src/modules/music-instrument/module.php"; ?>
+                    <?php $instruments = ['img' => 'images/r-n-b.png', 'name' => 'R-n-B'] ?>
+                    <?php include "../src/modules/music-instrument/module.php"; ?>
+                    <?php $instruments = ['img' => 'images/alternative.png', 'name' => 'Alternative'] ?>
+                    <?php include "../src/modules/music-instrument/module.php"; ?>
+                    <?php $instruments = ['img' => 'images/country.png', 'name' => 'Country'] ?>
+                    <?php include "../src/modules/music-instrument/module.php"; ?>
+                    <?php $instruments = ['img' => 'images/pop.png', 'name' => 'Pop'] ?>
+                    <?php include "../src/modules/music-instrument/module.php"; ?>
+                    <?php $instruments = ['img' => 'images/jazz.png', 'name' => 'Jazz'] ?>
+                    <?php include "../src/modules/music-instrument/module.php"; ?>
+                    <?php $instruments = ['img' => 'images/reggae.png', 'name' => 'Reggae'] ?>
+                    <?php include "../src/modules/music-instrument/module.php"; ?>
+                </div>
+                <a href="#" class="main__load-more">Load more</a>
             </article>
         </div>
     </main>

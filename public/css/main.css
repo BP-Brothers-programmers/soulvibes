@@ -137,6 +137,18 @@ body {
     border-radius: 50%;
     background-color: #dddddd; }
 
+.instrument {
+  position: relative;
+  text-align: center;
+  padding: 40px 5px 55px;
+  border: 1px solid lightgray; }
+  .instrument__name {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    bottom: 25px; }
+
 .header {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -152,3 +164,23 @@ body {
     font-weight: bold;
     font-family: CaviarDreams;
     color: white; }
+
+.main__instruments {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-gap: 20px;
+  margin-top: 20px; }
+
+.main__load-more {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 5px;
+  max-width: 300px;
+  width: 100%;
+  border: 1px solid lightgray;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: Montserrat;
+  font-weight: bold;
+  color: #c12127; }
