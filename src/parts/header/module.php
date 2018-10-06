@@ -7,7 +7,7 @@
             ['link' => '#', 'title' => 'event'],
             ['link' => '#', 'title' => 'news'],
             ['link' => '#', 'title' => 'contact'],
-        ] ?>
-        <?php include "../src/modules/menu/module.php"; ?>
+        ];
+        include "../src/modules/menu/module.php"; ?>
     </div>
 </header>
