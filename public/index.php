@@ -40,13 +40,13 @@
                 <a href="#" class="main__load-more">Load more</a>
             </article>
       </div>
-      <article>
+      <div>
             <div class="container">
                   <?php $containerTitle = ['title' => 'Upcoming Events'];
                         include "../src/modules/container-title/module.php"; ?>
             </div>
             <?php include "../src/parts/upcoming-events/module.php"; ?>
-      </article>
+      </div>
       <article>
             <div class="container">
                   <?php $containerTitle = ['title' => 'Latest News'];
@@ -78,8 +78,11 @@
                   <?php $containerTitle = ['title' => 'Contact Us'];
                         include "../src/modules/container-title/module.php"; ?>
             </div>
+            <?php include "../src/modules/community/module.php"; ?>
       </div>
     </main>
+
+    <?php include "../src/parts/footer/module.php"; ?>
     
     <script src="js/main.js"></script>
 </body>

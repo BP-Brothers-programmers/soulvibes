@@ -1,0 +1,59 @@
+.community {
+    padding: 70px 0;
+    background-image: url('../images/join-img.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    color: white;
+
+    &__content-width {
+        width: 50%;
+    }
+
+    &__title {
+        margin-bottom: 25px;
+        font-size: 3em;
+        font-family: Lora;
+    }
+
+    &__notification {
+        margin-bottom: 20px;
+        max-height: 45px;
+        overflow: hidden;
+        line-height: 22px;
+        font-weight: bold;
+        font-family: Montserrat;
+    }
+
+    &__input-container {
+        position: relative;
+    }
+
+    &__email {
+        padding: 15px 20px;
+        width: 100%;
+        border-radius: 4px;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+    }
+
+    &__button {
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+        padding: 12px 20px;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        background-color: #b50b1e;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1140px) {
+    .community {
+        padding: 70px 2%;
+    }
+}

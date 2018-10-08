@@ -104,6 +104,10 @@ body {
     text-shadow: 2px 11px 5px rgba(0, 0, 0, 0.33);
     color: white; }
 
+@media (max-width: 1140px) {
+  .banner {
+    padding: 0 2%; } }
+
 .menu__list {
   display: flex;
   justify-content: flex-end;
@@ -126,7 +130,7 @@ body {
     content: '';
     position: absolute;
     top: 58%;
-    left: -10px;
+    left: -20px;
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
     height: 3px;
@@ -136,11 +140,15 @@ body {
     content: '';
     position: absolute;
     top: 55%;
-    left: -15px;
+    left: -25px;
     height: 9px;
     width: 9px;
     border-radius: 50%;
     background-color: #dddddd; }
+
+@media (max-width: 1140px) {
+  .container-title {
+    padding: 25px 2% 15px; } }
 
 .instrument {
   position: relative;
@@ -219,6 +227,52 @@ body {
     .news__read-more:hover {
       background-color: #eeeeee; }
 
+.community {
+  padding: 70px 0;
+  background-image: url("../images/join-img.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: white; }
+  .community__content-width {
+    width: 50%; }
+  .community__title {
+    margin-bottom: 25px;
+    font-size: 3em;
+    font-family: Lora; }
+  .community__notification {
+    margin-bottom: 20px;
+    max-height: 45px;
+    overflow: hidden;
+    line-height: 22px;
+    font-weight: bold;
+    font-family: Montserrat; }
+  .community__input-container {
+    position: relative; }
+  .community__email {
+    padding: 15px 20px;
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    box-sizing: border-box; }
+  .community__button {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #b50b1e;
+    color: white;
+    cursor: pointer; }
+
+@media (max-width: 1140px) {
+  .community {
+    padding: 70px 2%; } }
+
 .header {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -253,6 +307,12 @@ body {
     padding-left: 5px;
     overflow-y: scroll; }
 
+.footer {
+  padding: 25px 0; }
+  .footer__copyright {
+    font-family: Montserrat;
+    font-size: 14px; }
+
 .main__instruments {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -278,3 +338,8 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   grid-gap: 20px;
   margin-top: 20px; }
+
+@media (max-width: 1140px) {
+  article,
+  .header {
+    padding: 0 2%; } }
