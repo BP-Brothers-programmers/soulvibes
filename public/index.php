@@ -12,7 +12,7 @@
     <?php include "../src/parts/header/module.php"; ?>
 
     <main class="main">
-        <?php $banner = ['title' => 'High Quality Internet Music Stations', 'img' => 'images/layer1.png'];
+        <?php $banner = ['title' => 'High Quality Internet Music Stations'];
               include "../src/modules/banner/module.php"; ?>
         <div class="container">   
             <article>
@@ -39,11 +39,46 @@
                 </div>
                 <a href="#" class="main__load-more">Load more</a>
             </article>
-            <article>
-                <?php $containerTitle = ['title' => 'Upcoming Events'];
-                      include "../src/modules/container-title/module.php"; ?>
-            </article>
-        </div>
+      </div>
+      <article>
+            <div class="container">
+                  <?php $containerTitle = ['title' => 'Upcoming Events'];
+                        include "../src/modules/container-title/module.php"; ?>
+            </div>
+            <?php include "../src/parts/upcoming-events/module.php"; ?>
+      </article>
+      <article>
+            <div class="container">
+                  <?php $containerTitle = ['title' => 'Latest News'];
+                        include "../src/modules/container-title/module.php"; ?>
+                  <div class="main__news container">
+                        <?php $news = [
+                              'time' => '21 march 2017',
+                              'title' => 'Lorem ipsum dolor sit amet consectetur.',
+                              'description' => 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis eum architecto sunt, quidem eos excepturi? Totam a deserunt ullam quas nisi enim repellat, vitae optio maiores praesentium aspernatur at exercitationem!'
+                        ];
+                        include "../src/modules/news/module.php"; ?>
+                        <?php $news = [
+                              'time' => '21 march 2017',
+                              'title' => 'Lorem ipsum dolor sit amet consectetur.',
+                              'description' => 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis eum architecto sunt, quidem eos excepturi? Totam a deserunt ullam quas nisi enim repellat, vitae optio maiores praesentium aspernatur at exercitationem!'
+                        ];
+                        include "../src/modules/news/module.php"; ?>
+                        <?php $news = [
+                              'time' => '21 march 2017',
+                              'title' => 'Lorem ipsum dolor sit amet consectetur.',
+                              'description' => 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis eum architecto sunt, quidem eos excepturi? Totam a deserunt ullam quas nisi enim repellat, vitae optio maiores praesentium aspernatur at exercitationem!'
+                        ];
+                        include "../src/modules/news/module.php"; ?>
+                  </div>
+            </div>
+      </article>
+      <div>
+            <div class="container">
+                  <?php $containerTitle = ['title' => 'Contact Us'];
+                        include "../src/modules/container-title/module.php"; ?>
+            </div>
+      </div>
     </main>
     
     <script src="js/main.js"></script>
