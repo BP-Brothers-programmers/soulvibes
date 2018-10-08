@@ -1,0 +1,27 @@
+.event {
+    padding: 15px 2% 15px 24.5px;
+    border-left: 2px solid white;
+    line-height: 25px;
+    color: white;
+
+    &__time {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -30px;
+            transform: translateY(-50%);
+            height: 9px;
+            width: 9px;
+            border-radius: 50%;
+            background-color: white;
+        }
+    }
+
+    &__title {
+        margin: 20px 0;
+        font-size: 2em;
+    }
+}
